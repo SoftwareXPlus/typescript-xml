@@ -2,7 +2,7 @@
     "name": "typescript-xml",
     "license": "MIT",
     "version": "0.1.0",
-    "description": "",
+    "description": "A compiler that compile JSON into HTML",
     "main": "index.js",
     "type": "commonjs",
     "author": "SoftwareX Plus",
@@ -11,11 +11,6 @@
         "test": "nodemon --ext .ts --watch src --exec tsc --noEmit",
         "build": "esbuild src/index.ts --bundle --outfile=index.js --platform=node"
     },
-    "keywords": [
-        "utils",
-        "discord.js",
-        "discord-bot"
-    ],
     "devDependencies": {
         "esbuild": "^0.20.2",
         "@types/node": "^20.11.30",
