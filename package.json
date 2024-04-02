@@ -1,0 +1,26 @@
+{
+    "name": "typescript-xml",
+    "license": "MIT",
+    "version": "0.1",
+    "description": "",
+    "main": "index.js",
+    "type": "commonjs",
+    "author": "SoftwareX Plus",
+    "scripts": {
+        "dev": "nodemon --ext .ts --watch src --exec tsx --no-deprecation src/index.ts",
+        "test": "nodemon --ext .ts --watch src --exec tsc --noEmit",
+        "build": "esbuild src/index.ts --bundle --outfile=index.js --platform=node"
+    },
+    "keywords": [
+        "utils",
+        "discord.js",
+        "discord-bot"
+    ],
+    "devDependencies": {
+        "esbuild": "^0.20.2",
+        "@types/node": "^20.11.30",
+        "nanospinner": "^1.1.0",
+        "tsx": "^4.7.1",
+        "typescript": "5.4.3"
+    }
+}
